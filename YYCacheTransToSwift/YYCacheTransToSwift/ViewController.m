@@ -20,6 +20,9 @@
     // 混编测试
     Test *test = [[Test alloc] init];
     [test testLog];
+    
+    DMCache *cache = [[DMCache alloc] init];
+    [cache test];
 }
 
 

@@ -15,6 +15,11 @@
 		ABD0444A255E76230044678E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABD04448255E76230044678E /* LaunchScreen.storyboard */; };
 		ABD0444D255E76230044678E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD0444C255E76230044678E /* main.m */; };
 		ABD04456255E76430044678E /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD04455255E76430044678E /* Test.swift */; };
+		ABD04486255E7DD20044678E /* YYDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD0447D255E7DD20044678E /* YYDiskCache.m */; };
+		ABD04487255E7DD20044678E /* YYCache.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD0447F255E7DD20044678E /* YYCache.m */; };
+		ABD04488255E7DD20044678E /* YYKVStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD04483255E7DD20044678E /* YYKVStorage.m */; };
+		ABD04489255E7DD20044678E /* YYMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD04484255E7DD20044678E /* YYMemoryCache.m */; };
+		ABD0448C255E7DED0044678E /* DMCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD0448B255E7DED0044678E /* DMCache.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,15 @@
 		ABD0444C255E76230044678E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ABD04454255E76420044678E /* YYCacheTransToSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YYCacheTransToSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		ABD04455255E76430044678E /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		ABD0447D255E7DD20044678E /* YYDiskCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYDiskCache.m; sourceTree = "<group>"; };
+		ABD0447E255E7DD20044678E /* YYKVStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYKVStorage.h; sourceTree = "<group>"; };
+		ABD0447F255E7DD20044678E /* YYCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYCache.m; sourceTree = "<group>"; };
+		ABD04480255E7DD20044678E /* YYMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYMemoryCache.h; sourceTree = "<group>"; };
+		ABD04481255E7DD20044678E /* YYDiskCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYDiskCache.h; sourceTree = "<group>"; };
+		ABD04482255E7DD20044678E /* YYCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYCache.h; sourceTree = "<group>"; };
+		ABD04483255E7DD20044678E /* YYKVStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYKVStorage.m; sourceTree = "<group>"; };
+		ABD04484255E7DD20044678E /* YYMemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYMemoryCache.m; sourceTree = "<group>"; };
+		ABD0448B255E7DED0044678E /* DMCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DMCache.swift; path = ../../../../../../../../Documents/DMCache.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +78,8 @@
 		ABD04439255E76200044678E /* YYCacheTransToSwift */ = {
 			isa = PBXGroup;
 			children = (
+				ABD0447C255E7DD20044678E /* YYCache */,
+				ABD04485255E7DD20044678E /* YYCache-Swift */,
 				ABD0443A255E76200044678E /* AppDelegate.h */,
 				ABD0443B255E76200044678E /* AppDelegate.m */,
 				ABD0443D255E76200044678E /* SceneDelegate.h */,
@@ -79,6 +95,29 @@
 				ABD04454255E76420044678E /* YYCacheTransToSwift-Bridging-Header.h */,
 			);
 			path = YYCacheTransToSwift;
+			sourceTree = "<group>";
+		};
+		ABD0447C255E7DD20044678E /* YYCache */ = {
+			isa = PBXGroup;
+			children = (
+				ABD04482255E7DD20044678E /* YYCache.h */,
+				ABD0447F255E7DD20044678E /* YYCache.m */,
+				ABD04481255E7DD20044678E /* YYDiskCache.h */,
+				ABD0447D255E7DD20044678E /* YYDiskCache.m */,
+				ABD0447E255E7DD20044678E /* YYKVStorage.h */,
+				ABD04483255E7DD20044678E /* YYKVStorage.m */,
+				ABD04480255E7DD20044678E /* YYMemoryCache.h */,
+				ABD04484255E7DD20044678E /* YYMemoryCache.m */,
+			);
+			path = YYCache;
+			sourceTree = "<group>";
+		};
+		ABD04485255E7DD20044678E /* YYCache-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				ABD0448B255E7DED0044678E /* DMCache.swift */,
+			);
+			path = "YYCache-Swift";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,11 +190,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABD04488255E7DD20044678E /* YYKVStorage.m in Sources */,
 				ABD04442255E76200044678E /* ViewController.m in Sources */,
 				ABD0443C255E76200044678E /* AppDelegate.m in Sources */,
+				ABD0448C255E7DED0044678E /* DMCache.swift in Sources */,
 				ABD04456255E76430044678E /* Test.swift in Sources */,
+				ABD04486255E7DD20044678E /* YYDiskCache.m in Sources */,
 				ABD0444D255E76230044678E /* main.m in Sources */,
 				ABD0443F255E76200044678E /* SceneDelegate.m in Sources */,
+				ABD04489255E7DD20044678E /* YYMemoryCache.m in Sources */,
+				ABD04487255E7DD20044678E /* YYCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
