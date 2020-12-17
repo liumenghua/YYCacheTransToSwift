@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB84D6C9256225D00089A981 /* DMDiskCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB84D6C8256225D00089A981 /* DMDiskCache.swift */; };
+		AB84D6CC256225D90089A981 /* DMMemoryCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB84D6CB256225D90089A981 /* DMMemoryCache.swift */; };
 		ABD0443C255E76200044678E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD0443B255E76200044678E /* AppDelegate.m */; };
 		ABD0443F255E76200044678E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD0443E255E76200044678E /* SceneDelegate.m */; };
 		ABD04442255E76200044678E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD04441255E76200044678E /* ViewController.m */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB84D6C8256225D00089A981 /* DMDiskCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMDiskCache.swift; sourceTree = "<group>"; };
+		AB84D6CB256225D90089A981 /* DMMemoryCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMMemoryCache.swift; sourceTree = "<group>"; };
 		ABD04437255E76200044678E /* YYCacheTransToSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYCacheTransToSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABD0443A255E76200044678E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ABD0443B255E76200044678E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -116,6 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				ABD0448B255E7DED0044678E /* DMCache.swift */,
+				AB84D6C8256225D00089A981 /* DMDiskCache.swift */,
+				AB84D6CB256225D90089A981 /* DMMemoryCache.swift */,
 			);
 			path = "YYCache-Swift";
 			sourceTree = "<group>";
@@ -194,9 +200,11 @@
 				ABD04442255E76200044678E /* ViewController.m in Sources */,
 				ABD0443C255E76200044678E /* AppDelegate.m in Sources */,
 				ABD0448C255E7DED0044678E /* DMCache.swift in Sources */,
+				AB84D6C9256225D00089A981 /* DMDiskCache.swift in Sources */,
 				ABD04456255E76430044678E /* Test.swift in Sources */,
 				ABD04486255E7DD20044678E /* YYDiskCache.m in Sources */,
 				ABD0444D255E76230044678E /* main.m in Sources */,
+				AB84D6CC256225D90089A981 /* DMMemoryCache.swift in Sources */,
 				ABD0443F255E76200044678E /* SceneDelegate.m in Sources */,
 				ABD04489255E7DD20044678E /* YYMemoryCache.m in Sources */,
 				ABD04487255E7DD20044678E /* YYCache.m in Sources */,

@@ -7,6 +7,7 @@
 
 #import "ViewController.h"
 #import "YYCacheTransToSwift-Swift.h"
+#import "YYCache/YYCache.h"
 
 @interface ViewController ()
 
@@ -20,10 +21,23 @@
     // 混编测试
     Test *test = [[Test alloc] init];
     [test testLog];
-    
-    DMCache *cache = [[DMCache alloc] init];
-    [cache test];
+        
+    [self testYYCacheObjc];
+    [self testYYCacheSwift];
 }
+
+- (void)testYYCacheObjc {
+    YYCache *userInfoCache = [YYCache cacheWithName:@"userInfo"];
+    [userInfoCache setObject:@"Jack" forKey:@"username" withBlock:^{
+        NSLog(@"Cache Successed!");
+    }];
+}
+
+- (void)testYYCacheSwift {
+    Test *test = [[Test alloc] init];
+    [test testCache];
+}
+
 
 
 @end
